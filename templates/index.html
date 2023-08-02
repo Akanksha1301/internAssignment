@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap" rel="stylesheet">
+
+
+    <link ... href="{{ url_for('static', filename='styles/team.css') }}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}">
+
+    <title>Inter'23||recruitment world</title>
+</head>
+
+<body>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <!-- ############### navbar section ########### -->
+        <div class="container">
+            <header>
+                <div class="navbar">
+                    <div class="logo">
+                        <h1>INTERN'23</h1>
+                    </div>
+                    <div class="navcontent">
+                        <label class="navbar-toggler" id="toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </label>
+                        <ul id="ul" class="nouse">
+                            <li class="team"><a href="#">About Us</a></li>
+                            <li class="About Us"><a href="#Abouto">Our Team</a></li>
+                            <li class="Events"><a href="{{ url_for('login_user') }}">Login</a></li>
+                            <li class="contact"><a href="#Contacto">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="hero">
+                <div class="clubname">
+                    <h1>INTERN'23</h1>
+                    <p>Recruitment World</p>
+                    <br>
+                    <h2 style="color: white;margin-right:45%;">
+                        FIND YOUR NEXT TOP TECH JOB IN 1 WEEK!!
+                    </h2>
+                    <p class="small">
+                        Are you a top 2% Software Engineer, Product Manager or Data Scientist? Let leading Indian technology companies compete to hire you.</p>
+                    <div class="sociallogo">
+                        <a href="#"><img src="{{ url_for('static', filename='icons/insta.svg') }}" alt="" /></a>
+                        <a href="#"><img src="{{ url_for('static', filename='icons/link.svg') }}" alt="" /></a>
+                        <a href="#"><img src="{{ url_for('static', filename='icons/gg.svg') }}" alt="" /></a>
+                    </div>
+                </div>
+                <div class="anim">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_tgkj7qnw.json" background="transparent" speed="0.5" style="width: 500px; height: 500px" loop autoplay></lottie-player>
+                </div>
+            </div>
+        </div>
+        <!-- ############# Upcoming Events ############## -->
+        <svg id="Evento" style="display:block; margin-top:-150px;" class="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,96L80,90.7C160,85,320,75,480,90.7C640,107,800,149,960,149.3C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+      </path>
+    </svg>
+        <div class="wave">
+            <!-- <div class="upcoming-event">
+        <h1 style="margin:50px 0px 50px 0px;color:rgb(0, 0, 0); font-size: 3rem;">Upcoming events</h1>
+      </div> -->
+            <div class="event-container" style="margin-top: 2%;">
+                <div class="event-image">
+                    <img src="https://assets-global.website-files.com/636dd759d71287e8ac7e6280/636dd759d7128701db7e63c6_Frame%2520283-min-p-800.png">
+                </div>
+                <div class="event-details">
+                    <h3> Have talent?</h3>
+                    <br>
+                    <h1>Why Job Seekers Love Us?</h1>
+                    <p>Unique jobs at startups and tech companies you can't find anywhere else
+
+                        <br>
+                        <br> Say goodbye to cover letters - your profile is all you need. One click to apply and you're done.
+
+                        <br>
+                        <br> Everything you need to know to job search - including seeing salary and stock options upfront when looking
+
+                        <br>
+                        <br>
+
+                    </p>
+                    <form action="">
+                        <button><a href="{{ url_for('login_user') }}" style="color:white;text-decoration: none;">LOGIN</a></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <svg id="Abouto" class="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 60 1440 150">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,96L80,90.7C160,85,320,75,480,90.7C640,107,800,149,960,149.3C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+      </path>
+    </svg>
+
+
+
+
+
+        <h1 class="team-heading">Our Team</h1>
+        <div class="team-section">
+            <div class="col">
+                <div class="img-container">
+                    <img src="{{ url_for('static', filename='img/B612_20220509_131307_320.jpg') }}" alt="" />
+                </div>
+                <div class="team-details"><span>President</span></div>
+            </div>
+            <div class="col">
+                <div class="img-container">
+                    <img src="{{ url_for('static', filename='Raw-images/images5.jpg') }}" alt="" />
+                </div>
+                <div class="team-details"><span>Secretary</span></div>
+            </div>
+            <div class="col">
+                <div class="img-container">
+                    <img src="{{ url_for('static', filename='Raw-images/images6.jpg') }}" alt="" />
+                </div>
+                <div class="team-details"><span>treasurer</span></div>
+            </div>
+            <div class="col">
+                <div class="img-container">
+                    <img src="{{ url_for('static', filename='Raw-images/images7.jpg') }}" alt="" />
+                </div>
+                <div class="team-details"><span> design team</span></div>
+            </div>
+            <div class="col">
+                <div class="img-container">
+                    <img src="{{ url_for('static', filename='Raw-images/Untitled1.jpg') }}" alt="" />
+                </div>
+                <div class="team-details"></div>
+            </div>
+            <div class="col">
+                <div class="img-container">
+                    <img src="{{ url_for('static', filename='Raw-images/Untitled2.jpg') }}" alt="" />
+                </div>
+                <div class="team-details"></div>
+            </div>
+            <div class="col">
+                <div class="img-container">
+                    <img src="{{ url_for('static', filename='Raw-images/Untitled3.jpg') }}" alt="" />
+                </div>
+                <div class="team-details"></div>
+            </div>
+            <div class="col">
+                <div class="img-container">
+                    <img src="{{ url_for('static', filename='Raw-images/Untitled4.jpg') }}" alt="" />
+                </div>
+                <div class="team-details"></div>
+            </div>
+        </div>
+
+        <!-- ########### Contact-us ############### -->
+        <section class="contact-us" id="Contacto">
+            <h2 class="heading-secondary">Register</h2>
+            <div class="contact-us__container">
+                <!-- <figure class="contact-us__img-container">
+          <img class="contact-us__img" src="./Raw-images/contact-us.svg" alt="contact-us" />
+        </figure> -->
+
+                <form action="http://localhost:5000/signup" method="post" class="contact-form">
+                    <input name="name" id="name" type="text" class="text-input" placeholder="Your name" required />
+                    <input name="email" id="email" type="email" class="text-input" placeholder="Email-ID" required />
+                    <input name="password" id="password" type="password" class="text-input" placeholder="Password" required />
+                    <input name="phone" id="contact" type="tel" class="text-input" placeholder="Phone Number" required />
+                    <input name="currprofile" id="currprofile" type="text" class="text-input" placeholder="Current Profile" required />
+                    <button class="submit-btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ############# Footer ################ -->
+        <div class="footer">
+            <footer>
+                <p>
+                    copyright @INTERN'23 reserved
+                </p>
+            </footer>
+        </div>
+
+        <script src="{{ url_for('static', filename='scripts/team-card.js') }}"></script>
+    </body>
+
+</html>

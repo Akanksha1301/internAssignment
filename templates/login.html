@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        .login {
+            margin-top: 85px;
+            margin-right: 38%;
+            float: right;
+            width: 30%;
+            height: 70%;
+            background-color: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            outline: none;
+            text-decoration: none;
+            padding-bottom: 2%;
+        }
+        
+        .login h1 {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .input {
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+            width: 70%;
+        }
+        
+        .btn {
+            width: 35%;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <h1>Login </h1>
+        <h3>{{content}}</h3>
+        <form action="http://localhost:5000/login" method="post">
+            <input type="email" id="email" name="email" class="input" placeholder="email" required>
+            <br>
+            <input type="password" id="password" name="password" class="input" placeholder="**************" required>
+            <br>
+            <button type="submit" value="Login"> LOGIN</button>
+        </form>
+        <!-- <script>
+            function validateLogin() {
+                var username = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+
+                // Add your frontend validation logic here
+                // For example, check username and password length, complexity, etc.
+                if (username.length < 4) {
+                    alert('Username must be at least 4 characters long');
+                    return false;
+                }
+
+                if (password.length < 8) {
+                    alert('Password must be at least 8 characters long');
+                    return false;
+                }
+
+                return true;
+            }
+        </script> -->
+    </div>
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>
